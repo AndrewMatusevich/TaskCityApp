@@ -1,6 +1,7 @@
 package com.example.taskcityapp.di
 
 import android.content.Context
+import com.example.taskcityapp.presentation.main.MainActivity
 import dagger.BindsInstance
 import dagger.Component
 
@@ -14,6 +15,7 @@ import dagger.Component
 )
 interface AppComponent {
 
+    fun inject(mainActivity: MainActivity)
 
     @Component.Builder
     interface Builder{

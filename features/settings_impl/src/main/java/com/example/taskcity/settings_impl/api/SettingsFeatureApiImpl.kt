@@ -1,10 +1,16 @@
-package com.example.taskcityapp.settings_impl.api
+package com.example.taskcity.settings_impl.api
 
-import com.example.taskcityapp.settings_api.api.SettingsFeatureApi
+import androidx.navigation.NavGraphBuilder
+import androidx.navigation.compose.composable
+import com.example.taskcity.settings_api.api.SettingsFeatureApi
+import com.example.taskcity.settings_impl.presentation.Settings
 import javax.inject.Inject
 
+
 class SettingsFeatureApiImpl @Inject constructor(): SettingsFeatureApi {
-    override fun get(): Boolean {
-        TODO("Not yet implemented")
+    override fun registerDestination(navGraphBuilder: NavGraphBuilder) {
+        navGraphBuilder.composable("settings") {
+            Settings()
+        }
     }
 }

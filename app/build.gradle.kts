@@ -11,7 +11,7 @@ android {
     compileSdk = libs.versions.compileSdk.get().toInt() // 35
 
     defaultConfig {
-        applicationId = "com.example.taskcityappapp"
+        applicationId = "com.example.taskcityapp"
         minSdk = libs.versions.minSdk.get().toInt() // 26
         targetSdk = libs.versions.targetSdk.get().toInt() // 35
         versionCode = libs.versions.versionCode.get().toInt() // 1

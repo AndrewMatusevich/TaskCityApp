@@ -1,4 +1,4 @@
-package com.example.taskcityappapp.ui
+package com.example.taskcityapp.ui
 
 import org.junit.Test
 

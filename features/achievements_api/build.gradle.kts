@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.taskcityappapp.achievements_api"
+    namespace = "com.example.taskcityapp.achievements_api"
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
@@ -37,25 +37,10 @@ dependencies {
 
     // Core AndroidX
     implementation(libs.androidx.core.ktx)
+    // Navigation
+    implementation(libs.navigation.compose)
+    implementation(libs.androidx.navigation.runtime.ktx)
     // Dagger
     implementation(libs.dagger)
     kapt(libs.dagger.compiler)
-
-    // i have a feature_api module in compose project with dagger and i want to pass
-
-    //implementation("androidx.navigation:navigation-compose:2.8.9")
-    //implementation("androidx.navigation:navigation-runtime-ktx:2.8.9")
-//
-  ////  implementation(libs.androidx.navigation.runtime.ktx)
-    //implementation (libs.compose.runtime) // compose runtime
-    //implementation(libs.androidx.compose.compiler)
-    ////androidTestImplementation(libs.androidx.test.ext.junit)
-//
-    //implementation(libs.androidx.core.ktx)
-    //implementation(libs.androidx.appcompat)
-    //implementation(libs.material)
-    //testImplementation(libs.junit)
-    //androidTestImplementation(libs.junit)
-    //androidTestImplementation(libs.androidx.junit)
-    //androidTestImplementation(libs.androidx.espresso.core)
 }

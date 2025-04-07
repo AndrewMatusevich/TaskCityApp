@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.taskcityappapp.city_api"
+    namespace = "com.example.taskcityapp.city_api"
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
@@ -37,6 +37,9 @@ dependencies {
 
     // Core AndroidX
     implementation(libs.androidx.core.ktx)
+    // Navigation
+    implementation(libs.navigation.compose)
+    implementation(libs.androidx.navigation.runtime.ktx)
     // Dagger
     implementation(libs.dagger)
     kapt(libs.dagger.compiler)

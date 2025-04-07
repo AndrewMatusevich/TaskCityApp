@@ -1,4 +1,4 @@
-package com.example.taskcity.city_impl.presentation
+package com.example.taskcity.settings_impl.presentation
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
@@ -9,10 +9,10 @@ import androidx.compose.ui.Modifier
 
 
 @Composable
-fun City(){
+fun Settings() {
     Box(modifier = Modifier.fillMaxSize(),
         contentAlignment = Alignment.Center
     ){
-        Text(text = "City")
+        Text(text = "Settings")
     }
 }

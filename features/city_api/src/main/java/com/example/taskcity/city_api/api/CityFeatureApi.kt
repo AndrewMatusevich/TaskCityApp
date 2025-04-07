@@ -1,6 +1,8 @@
-package com.example.taskcityapp.city_api.api
+package com.example.taskcity.city_api.api
+
+import androidx.navigation.NavGraphBuilder
 
 
 interface CityFeatureApi {
-    fun get(): Boolean
+    fun registerDestination(navGraphBuilder: NavGraphBuilder)
 }

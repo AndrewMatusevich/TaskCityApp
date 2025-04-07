@@ -37,6 +37,9 @@ dependencies {
 
     // Core AndroidX
     implementation(libs.androidx.core.ktx)
+    // Navigation
+    implementation(libs.navigation.compose)
+    implementation(libs.androidx.navigation.runtime.ktx)
     // Dagger
     implementation(libs.dagger)
     kapt(libs.dagger.compiler)

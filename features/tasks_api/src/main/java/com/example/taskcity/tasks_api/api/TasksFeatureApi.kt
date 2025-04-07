@@ -1,6 +1,8 @@
-package com.example.taskcityapp.tasks_api.api
+package com.example.taskcity.tasks_api.api
+
+import androidx.navigation.NavGraphBuilder
 
 
 interface TasksFeatureApi {
-    fun get(): Boolean
+    fun registerDestination(navGraphBuilder: NavGraphBuilder)
 }

@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.taskcityappapp.ui"
+    namespace = "com.example.taskcityapp.ui"
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
@@ -39,6 +39,8 @@ android {
 
 dependencies {
 
+    // Modules
+    implementation(project(":core:navigation"))
     // Core AndroidX
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)

@@ -1,4 +1,4 @@
-package com.example.taskcityappapp.ui.theme
+package com.example.taskcityapp.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

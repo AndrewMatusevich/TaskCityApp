@@ -8,12 +8,21 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import com.example.taskcityappapp.core_ui.TaskCityNavBar
-import com.example.taskcityappapp.ui.widgets.BottomTabs
-import com.example.taskcityappapp.ui.widgets.MainNavHost
+import com.example.taskcity.achievements_api.api.AchievementsFeatureApi
+import com.example.taskcity.city_api.api.CityFeatureApi
+import com.example.taskcity.settings_api.api.SettingsFeatureApi
+import com.example.taskcity.tasks_api.api.TasksFeatureApi
+import com.example.taskcityapp.ui.widgets.nav_widgets.TaskCityNavBar
+import com.example.taskcityapp.ui.BottomTabs
+import com.example.taskcityapp.navigation.MainNavHost
 
 @Composable
-fun AppContent() {
+fun AppContent(
+    cityFeature: CityFeatureApi,
+    achievementsFeature: AchievementsFeatureApi,
+    tasksFeature: TasksFeatureApi,
+    settingsFeature: SettingsFeatureApi
+) {
 
     val tabs = remember { BottomTabs.entries.toTypedArray() }
     val navController: NavHostController = rememberNavController()
@@ -24,6 +33,10 @@ fun AppContent() {
     ) { innerPaddingModifier ->
         MainNavHost(
             navController = navController,
+            cityFeature = cityFeature,
+            achievementsFeature = achievementsFeature,
+            tasksFeature = tasksFeature,
+            settingsFeature = settingsFeature,
             modifier = Modifier.padding(innerPaddingModifier)
         )
     }

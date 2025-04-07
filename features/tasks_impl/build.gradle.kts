@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.taskcityappapp.tasks_impl"
+    namespace = "com.example.taskcityapp.tasks_impl"
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
@@ -57,6 +57,12 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    // Navigation
+    implementation(libs.navigation.compose)
+    implementation(libs.androidx.navigation.runtime.ktx)
+    // Dagger
+    implementation(libs.dagger)
+    kapt(libs.dagger.compiler)
     // Testing
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
@@ -65,47 +71,4 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-    // Dagger
-    implementation(libs.dagger)
-    kapt(libs.dagger.compiler)
-
-    //// ui compose
-    //implementation (libs.compose.runtime) // compose runtime
-    //implementation(libs.androidx.compose.compiler)
-    //implementation(libs.activity.compose)
-    //implementation(platform(libs.compose.bom))
-    //implementation(libs.androidx.ui)
-    //implementation(libs.ui.graphics)
-    //implementation(libs.ui.tooling.preview)
-//
-    //implementation(libs.material3)
- // //  implementation(libs.compose.navigation)
-  ////  implementation(libs.androidx.navigation.runtime.ktx)
-    //implementation(libs.lifecycle.runtime.compose)
-    //implementation(libs.kotlinx.collections.immutable)
-    //implementation(libs.kotlinx.coroutines.android)
-    //implementation(libs.lifecycle.viewmodel.ktx)
-    //implementation(libs.coil.compose)
-    //androidTestImplementation(platform(libs.compose.bom))
-    //androidTestImplementation(libs.ui.test.junit4)
-    //androidTestImplementation(libs.navigation.testing)
-    //debugImplementation(libs.ui.tooling)
-    //debugImplementation(libs.ui.test.manifest)
-//
-    //// tests
-    //testImplementation(libs.junit)
-    //testImplementation(libs.mockk)
-    //testImplementation(libs.kotlinx.coroutines.test)
-    ////androidTestImplementation(libs.androidx.test.ext.junit)
-//
-    //implementation (libs.compose.runtime) // compose runtime
-    //implementation(libs.androidx.compose.compiler)
-//
-    //implementation(libs.androidx.core.ktx)
-    //implementation(libs.androidx.appcompat)
-    //implementation(libs.material)
-    //testImplementation(libs.junit)
-    //androidTestImplementation(libs.junit)
-    //androidTestImplementation(libs.androidx.junit)
-    //androidTestImplementation(libs.androidx.espresso.core)
 }

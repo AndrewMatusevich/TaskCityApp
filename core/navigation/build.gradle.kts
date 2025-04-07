@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.navigation"
+    namespace = "com.example.taskcityapp.navigation"
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {

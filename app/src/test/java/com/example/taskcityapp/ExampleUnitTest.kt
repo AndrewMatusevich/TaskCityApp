@@ -1,4 +1,4 @@
-package com.example.taskcityappapp
+package com.example.taskcityapp
 
 import org.junit.Test
 

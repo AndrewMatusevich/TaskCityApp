@@ -1,8 +1,16 @@
-package com.example.taskcityapp.tasks_impl.api
+package com.example.taskcity.tasks_impl.api
 
-import com.example.taskcityapp.tasks_api.api.TasksFeatureApi
+import androidx.navigation.NavGraphBuilder
+import androidx.navigation.compose.composable
+import com.example.taskcity.tasks_api.api.TasksFeatureApi
+import com.example.taskcity.tasks_impl.presentation.Tasks
 import javax.inject.Inject
 
+
 class TasksFeatureApiImpl @Inject constructor(): TasksFeatureApi {
-    override fun get(): Boolean = true
+    override fun registerDestination(navGraphBuilder: NavGraphBuilder) {
+        navGraphBuilder.composable("tasks") {
+            Tasks()
+        }
+    }
 }

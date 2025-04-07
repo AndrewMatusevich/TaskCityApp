@@ -1,4 +1,4 @@
-package com.example.taskcityappapp.core_ui
+package com.example.taskcityapp.ui.widgets.nav_widgets
 
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.material3.Icon
@@ -13,8 +13,8 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
-import com.example.navigation.navigateToSingleTopTo
-import com.example.taskcityappapp.ui.widgets.BottomTabs
+import com.example.taskcityapp.navigation.navigateToSingleTopTo
+import com.example.taskcityapp.ui.BottomTabs
 
 
 @Composable

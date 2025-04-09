@@ -1,7 +1,6 @@
 package com.example.taskcityapp.navigation
 
 import androidx.annotation.StringRes
-import androidx.navigation.NavHostController
 
 
 interface BottomNavigationDestination{

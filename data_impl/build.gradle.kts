@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
+    id("kotlin-kapt")
 }
 
 android {
@@ -36,6 +37,31 @@ dependencies {
     
     // Modules
     implementation(project(":data_api"))
+    implementation(project(":domain_models"))
+
+    // Core AndroidX
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.kotlinx.coroutines.android)
+   // implementation (libs.javax.inject)
+    implementation ("javax.inject:javax.inject:1")
+
+    // Retrofit
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.converter.json)
+    implementation (libs.adapter.rxjava2)
+    implementation (libs.converter.moshi)
+
+    // OkHttp
+    implementation(libs.okhttp3.interceptor)
+    // Moshi
+    implementation (libs.moshi)
+    implementation (libs.moshi.kotlin)
+    //kapt(libs.moshi.kotlin.codegen)
+    kapt("com.squareup.moshi:moshi-kotlin-codegen:1.15.2")
+
+
+
+
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

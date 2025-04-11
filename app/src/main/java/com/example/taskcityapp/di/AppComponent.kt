@@ -10,7 +10,8 @@ import dagger.Component
     modules = [
         AppModule::class,
         FeatureModule::class,
-        RepositoryModule::class
+        RepositoryModule::class,
+        NetworkModule::class
     ]
 )
 interface AppComponent {

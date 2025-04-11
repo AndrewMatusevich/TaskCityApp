@@ -38,8 +38,8 @@ dependencies {
 
     //implementation(project(":core:navigation"))
     //implementation(project(":core:ui"))
-    //implementation(project(":data_api"))
-    //implementation(project(":domain_models"))
+    implementation(project(":data_api"))
+    implementation(project(":domain_models"))
     implementation(project(":features:tasks_api"))
 
     //implementation("androidx.navigation:navigation-compose:2.8.9")

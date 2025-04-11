@@ -34,21 +34,19 @@ android {
 }
 
 dependencies {
+    // Modules
+    implementation(project(":domain_models"))
 
     // Core AndroidX
     implementation(libs.androidx.core.ktx)
+
+    implementation("androidx.compose.ui:ui-tooling:1.6.1")
+    debugImplementation("androidx.compose.ui:ui-test-manifest:1.6.1")
+
+
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.appcompat)
-    //implementation(libs.material)
-    // Compose
-    implementation(platform(libs.androidx.compose.bom))
-    implementation(libs.androidx.ui)
-    //implementation(libs.androidx.ui.graphics)
-    implementation(libs.androidx.ui.tooling.preview)
-    // Navigation
-    //implementation(libs.navigation.compose)
-    implementation(libs.androidx.navigation.runtime.ktx)
     // Testing
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
